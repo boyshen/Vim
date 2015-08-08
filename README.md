@@ -1,5 +1,12 @@
-# Vim
-Vim配置</br>
+【1】部署方法</br>
+(1)将vim.tar上传到~目录</br>
+(2)解压vim.tar[tar -xvf vim.tar]</br>
+(3)安装ctags[yum -y install ctags]</br>
+(4)修改~/.bashrc文件，将vim的别名修改为vi[在~/.bashrc文件中添加alias vi='vim']</br>
+(5)修改~/.vimrc文件中的作者名字和邮箱修改为自己的[在编写.c,.c++,sh等文件的时候自动添加的信息]</br>
+</br>
+</br>
+【2】vim功能</br>
 //-------------------------------【#】显示函数列表</br>
 <F2> : TlistToggle               //显示函数列表</br>
 		按<F2>将会在VIM的左边打开一个Taglist窗口，这个窗口里面包含了C文件里面的定义，如struct,typedef,全局变量,函数等。</br>
