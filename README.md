@@ -1,9 +1,12 @@
+<p align="center">
+	<img 
+		style="margin-bottom: -30px"
+		align="center" 
+		height="70" 
+		src="http://img.labnol.org/images/2008/04/gif-animation.gif">
+</p>
 【1】部署方法</br>
-(1)将vim.tar上传到~目录</br>
-(2)解压vim.tar[tar -xvf vim.tar]</br>
-(3)安装ctags[yum -y install ctags]</br>
-(4)修改~/.bashrc文件，将vim的别名修改为vi[在~/.bashrc文件中添加alias vi='vim']</br>
-(5)修改~/.vimrc文件中的作者名字和邮箱修改为自己的[在编写.c,.c++,sh等文件的时候自动添加的信息]</br>
+sh start_vim.sh
 </br>
 </br>
 【2】vim功能</br>
