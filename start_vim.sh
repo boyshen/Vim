@@ -13,7 +13,7 @@ VIM_FILE=./packages/vim*
 function Vim_config ()      
 {   
 	clear
-	tar -zxf ${VIM_FILE}
+	tar -zxf ${VIM_FILE} -C /root/
 	cd ./packages/
 	ck=`rpm -qa | grep "ctag" | wc -l`;
 	if [ $ck -eq 0 ];
