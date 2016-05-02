@@ -1,15 +1,8 @@
-<p align="center">
-	<img 
-		style="margin-bottom: -30px"
-		align="center" 
-		height="70" 
-		src="http://img.labnol.org/images/2008/04/gif-animation.gif">
-</p>
-【1】部署方法</br>
+#部署方法
 sh start_vim.sh
 </br>
 </br>
-【2】vim功能</br>
+#vim功能
 //-------------------------------【#】显示函数列表</br>
 <F2> : TlistToggle               //显示函数列表</br>
 		按<F2>将会在VIM的左边打开一个Taglist窗口，这个窗口里面包含了C文件里面的定义，如struct,typedef,全局变量,函数等。</br>
@@ -53,7 +46,7 @@ sh start_vim.sh
 //--------------------------------【#】	头文件和c文件切换</br>
 ：AV</br>
 		垂直分屏显示头文件或者c文件	</br>
-【其他功能】--</br>
+#其他功能
 1.输入main后按table键，自动生成main函数</br>
 2.输入单词自动补全//注，本文档之前输入的单词自动补全</br>
 3.按tab键会产生4个空格，很适合python编程哦
