@@ -13,14 +13,10 @@ VIM_FILE=./packages/vim*
 function Vim_config ()      
 {   
 	clear
-	tar -zxf ${VIM_FILE} -C /root/
+	tar -zxf ${VIM_FILE} -C ~/
 	cd ./packages/
-	ck=`rpm -qa | grep "ctag" | wc -l`;
-	if [ $ck -eq 0 ];
-	then
-		CTAG_FILE=$(find -name '*.rpm')
-		rpm -i --nodeps $CTAG_FILE
-	fi
+	CTAG_FILE=$(find -name '*.rpm')
+	rpm -i --nodeps $CTAG_FILE
 	if [ $? -eq 0 ];then      
      
 	  	read -p "Please input your name:" AUTHOR      
