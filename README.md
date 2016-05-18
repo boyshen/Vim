@@ -1,10 +1,31 @@
 #部署方法
-sh start_vim.sh
-</br>
-</br>
-#vim功能
+一键化安装VIM IDE环境
+##【目录】
+----
 
-```bash
+[0 vim IDE 部署方法](#0)  
+........[0.1 VIM IDE部署方法 ](#0.1)  
+........[0.2 .vim 一览 ](#0.2)  
+[1 Vim IDE 功能 ](#1)  
+[2 Vim 版本发布 ](#2)  
+
+##【正文】
+----
+
+<h2 name="0">vim IDE 部署方法</h2>
+<h3 name="0.1">0.1 VIM IDE部署方法</h3>
+部署方法很简单
+
+```
+git clone https://github.com/BillWang139967/Vim.git
+sh start_vim.sh
+```
+<h3 name="0.2">0.2 IDE一览 </h3>
+
+![Screenshot](https://github.com/BillWang139967/Vim/raw/master/images/vim.jpg)
+
+<h2 name="1">1 源码安装编辑器 vim</h2>
+```
     //-------------------------------【#】显示函数列表
     <F2> : TlistToggle               //显示函数列表
             按<F2>将会在VIM的左边打开一个Taglist窗口，这个窗口里面包含了C文件里面的定义，如struct,typedef,全局变量,函数等。
@@ -44,13 +65,16 @@ sh start_vim.sh
     ：AV
             垂直分屏显示头文件或者c文件
 
-```
 
-#其他功能
-
-```bash
     1.输入main后按table键，自动生成main函数
     2.输入单词自动补全//注，本文档之前输入的单词自动补全
     3.按tab键会产生4个空格，很适合python编程哦
+    4.命令行模式输入:DIstart,可以进行画图，通过:DIstop 进行关闭
 
 ```
+
+<h2 name="2">2 vim版本发布</h2>
+----
+* v1.0.3，2016-05-18，对github文档进行整理
+* v1.0.2，2014-08-13，新增：对Vim进行整理发布一键化程序 
+* v1.0.1，2014-01-01，新增。发布初始版本。
