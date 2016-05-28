@@ -20,9 +20,9 @@ function Vim_config ()
 	if [ $? -eq 0 ];then      
      
 	  	read -p "Please input your name:" AUTHOR      
-	  	sed -i "s/wangbin/$AUTHOR/g" $VIMRC     
+	  	sed -i "s/Bill/$AUTHOR/g" $VIMRC     
 	  	read -p "Please input your E-mail:" MAIL_AUTHOR     
-	  	sed -i "s/772384788@qq.com/$MAIL_AUTHOR/g" $VIMRC     
+	  	sed -i "s/XXXXXXX@qq.com/$MAIL_AUTHOR/g" $VIMRC     
 	fi 
 	CK_VIM=`grep "vi='vim'" ~/.bashrc | wc -l`
 	if [ "w${CK_VIM}" = "w0" ]
